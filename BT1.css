@@ -120,7 +120,7 @@ body {
   font-size: 14px;
 }
 
-#main #right .menu_right ul li a : hover {
+#main #right .menu_right ul li a:hover {
   color: orange;
 }
 
@@ -132,4 +132,19 @@ body {
   line-height: 40px;
   color: #FFF;
   text-indent: 40px;
+}
+
+#menu_top ul li ul {
+  position: absolute;
+  background: #141414;
+  top: 40px;
+  display: none;
+}
+
+#menu_top ul li a:hover {
+  background: red;
+}
+
+#menu_top ul li:hover ul {
+  display: block;
 }
