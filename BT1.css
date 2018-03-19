@@ -148,3 +148,7 @@ body {
 #menu_top ul li:hover ul {
   display: block;
 }
+
+#menu_top ul li ul li {
+  float: inherit;
+}
