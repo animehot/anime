@@ -10,26 +10,13 @@ body {
   height: 40px;
 }
 
-#banner {
-  height: auto;
-  width: 1000px;
-}
-
-#main #left {
-  width: 700px;
-  float: left;
-  min-height: 400px;
-}
-
-#main #right {
-  width: 300px;
-  min-height: 400px;
-  float: left;
-}
+#wrapper{width: 1000px; margin: 0 auto;}
+.slider{width: 1000px; height: 563px; position: relative; margin: 0px auto;}
+.slider img {position: absolute;}
 
 #footer {
   background: #000;
-  width: 1000px;
+  width: 100%;
   text-align: center;
   height: 60px;
   color: #FFF;
@@ -61,84 +48,16 @@ body {
   background: #1949b5;
 }
 
-#banner img{
-  width: 1000px;
-
-}
-
-#main #left img{
-  width: 230px;
-}
-
-#main #left ul {
-  margin: 0px;
-  padding: 0px;
-}
-
-#main #left ul li {
-  list-style: none;
-  clear: left;
-  border-bottom: 2px solid #ccc;
-  float: left;
-  margin-bottom: 20px;
-}
-
-#main #left ul li img {
-  float: left;
-  margin-right: 10px;
-  margin-bottom: 20px;
-}
-
-#main #left ul li h2 {
-  font-size: 15px;
-  margin-top: 0px;
-}
-
-#main {
-  margin-top: 10px;
-}
-
-#main #right .menu_right ul {
-  margin: -15px 0px 0px 0px;
-  padding: 0px;
-  border: 1px solid #ccc;
-}
-
-#main #right .menu_right ul li {
-  list-style: none;
-}
-
-#main #right .menu_right ul li a {
-  display: block;
-  text-decoration: none;
-  line-height: 45px;
-  height: 40px;
-  border-bottom: 1px solid #ccc;
-  background: url(../Image/orange-tick-icon.png) no-repeat 2px;
-  text-indent: 25px;
-  color: #878787;
-  font-size: 14px;
-}
-
-#main #right .menu_right ul li a:hover {
-  color: orange;
-}
-
-#main #right .menu_right h3 {
-  background: #194d58 url(../Image/portable-ant-movie-catalog.jpg) no-repeat 3px;
-  height: 40px;
-  margin-top: 0px;
-  font-size: 14px;
-  line-height: 40px;
-  color: #FFF;
-  text-indent: 40px;
-}
-
 #menu_top ul li ul {
   position: absolute;
   background: #141414;
   top: 40px;
   display: none;
+  z-index: 9999;
+}
+
+#menu_top ul li ul li {
+  float: inherit;
 }
 
 #menu_top ul li a:hover {
@@ -147,8 +66,4 @@ body {
 
 #menu_top ul li:hover ul {
   display: block;
-}
-
-#menu_top ul li ul li {
-  float: inherit;
 }
