@@ -58,13 +58,9 @@
       $(document).ready(function(){
         //ẩn hết tất cả hình trừ tấm đầu tiên
         $('.slider img:gt(0)').hide();
-        //thời gian chuyển giữa các bức hình: 4000 là 4 giây
         setInterval(function(){
-          //hình đầu tiên ẩn dần
           $('.slider :first-child').fadeOut()
-          //hình thứ 2 hiện dần
           .next('img').fadeIn()
-          //đưa hình đầu tiên ra cuối, mình bỏ first-child
           .end().appendTo('.slider');
         },2000);
       });
