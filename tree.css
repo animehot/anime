@@ -38,6 +38,7 @@ header .search {
 #navbar ul li ul li {
   float: inherit;
   width: 130px;
+  border-bottom: 1px solid #ccc;
 }
 
 #navbar ul li a:hover {
